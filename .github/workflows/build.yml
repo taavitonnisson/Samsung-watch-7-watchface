@@ -19,9 +19,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Extract project
         run: |
           unzip -o Focus-Watch7-phone-build.zip -d project
