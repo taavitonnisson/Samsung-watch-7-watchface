@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+ <Scene backgroundColor="#000000">
+  <PartText x="65" y="58" width="320" height="38"><Text><Font family="SYNC_TO_DEVICE" size="27" color="#C9C6BC"><Template><![CDATA[%s %s]]><Parameter expression="[DAY_OF_WEEK_S]"/><Parameter expression="[DAY]"/></Template></Font></Text></PartText>
+  <DigitalClock x="30" y="100" width="390" height="80"><TimeText format="hh:mm:ss"><Font family="SYNC_TO_DEVICE" size="69" color="#FFFFFF" /></TimeText></DigitalClock>
+  <PartText x="70" y="190" width="310" height="30"><Text><Font family="SYNC_TO_DEVICE" size="19" color="#C9C6BC">NEXT MEETING</Font></Text></PartText>
+  <ComplicationSlot slotId="10" supportedTypes="LONG_TEXT" x="45" y="220" width="360" height="105">
+   <BoundingRoundRect x="0" y="0" width="360" height="105" cornerRadius="8" />
+   <Complication type="LONG_TEXT">
+    <PartText x="8" y="0" width="344" height="37"><Text><Font family="SYNC_TO_DEVICE" size="23" color="#FFFFFF"><Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template></Font></Text></PartText>
+    <PartText x="8" y="42" width="344" height="42"><Text><Font family="SYNC_TO_DEVICE" size="19" color="#C9C6BC"><Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TITLE]" /></Template></Font></Text></PartText>
+   </Complication>
+  </ComplicationSlot>
+  <ComplicationSlot slotId="11" supportedTypes="SHORT_TEXT" x="80" y="335" width="90" height="65">
+   <BoundingOval x="0" y="0" width="90" height="65" />
+   <DefaultProviderPolicy defaultSystemProvider="STEP_COUNT" defaultSystemProviderType="SHORT_TEXT" />
+   <Complication type="SHORT_TEXT"><PartText x="0" y="0" width="90" height="65"><Text><Font family="SYNC_TO_DEVICE" size="23" color="#FFFFFF"><Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template></Font></Text></PartText></Complication>
+  </ComplicationSlot>
+  <ComplicationSlot slotId="12" supportedTypes="SHORT_TEXT" x="180" y="335" width="90" height="65">
+   <BoundingOval x="0" y="0" width="90" height="65" />
+   <DefaultProviderPolicy defaultSystemProvider="WATCH_BATTERY" defaultSystemProviderType="SHORT_TEXT" />
+   <Complication type="SHORT_TEXT"><PartText x="0" y="0" width="90" height="65"><Text><Font family="SYNC_TO_DEVICE" size="23" color="#FFFFFF"><Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template></Font></Text></PartText></Complication>
+  </ComplicationSlot>
+  <ComplicationSlot slotId="13" supportedTypes="SHORT_TEXT" x="280" y="335" width="90" height="65">
+   <BoundingOval x="0" y="0" width="90" height="65" />
+   <Complication type="SHORT_TEXT"><PartText x="0" y="0" width="90" height="65"><Text><Font family="SYNC_TO_DEVICE" size="23" color="#FFFFFF"><Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template></Font></Text></PartText></Complication>
+  </ComplicationSlot>
+ </Scene>
+</WatchFace>
